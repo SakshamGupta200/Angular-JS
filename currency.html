@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <select ng-model="curr" name="curr">
+            
+            <option value="1">Rupees</option>
+            <option value="99">Pound</option>
+            <option value="87">Euro</option>
+            <option value="82">Dollar</option>
+        </select>
+        <input type="number" name="curren" ng-model="curren">
+        <p>rupees = {{curren*curr}}</p>
+    </div>
+</body>
+</html>

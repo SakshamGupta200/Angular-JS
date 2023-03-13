@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckAll</title>
+    <script src="angular.min.js"></script>
+    <style>
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app="">
+        <h2>Select All Courses</h2>
+        <h1><input type="checkbox" ng-model="all">Select All</h1>
+        <p><input type="checkbox" ng-checked="all">Java</p>
+        <p><input type="checkbox" ng-checked="all">Python</p>
+        <p><input type="checkbox" ng-checked="all">PHP</p>
+        <p><input type="checkbox" ng-checked="all">.Net</p>
+        <p><input type="checkbox" ng-checked="all">Web Designing</p>
+        <p><input type="checkbox" ng-checked="all">C++</p>
+        <p><input type="checkbox" ng-checked="all">Other</p>
+    </div>
+</body>
+
+</html>

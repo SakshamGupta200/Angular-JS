@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <script src="angular.min.js"></script>
+    <style>
+        .theme1 {
+            background-color: cyan;
+            color: red;
+            font-size: large;
+            text-align: justify;
+            font-weight: bolder;
+            height: 300px;
+            width: 300px;
+        }
+
+        .theme2 {
+            background-color: lightcoral;
+            color: green;
+            font-size: large;
+            text-align: justify;
+            font-weight: bolder;
+            height: 300px;
+            width: 300px;
+        }
+
+        .theme3 {
+            background-color: purple;
+            color: yellow;
+            font-size: large;
+            text-align: justify;
+            font-weight: bolder;
+            height: 300px;
+            width: 300px;
+        }
+
+        .theme4 {
+            background-color: blue;
+            color: white;
+            font-size: large;
+            text-align: justify;
+            font-weight: bolder;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app="">
+        <select ng-model="demo">
+            <option value="theme1">Theme1</option>
+            <option value="theme2">Theme2</option>
+            <option value="theme3">Theme3</option>
+            <option value="theme4">Theme4</option>
+        </select>
+        <div ng-class="demo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Q
+            uibusdam voluptatem doloribus voluptate ea facilis, officia, nihil consequatur harum si
+            milique odit quae cumque dicta. Id deserunt unde recusandae voluptatem, iste quae?
+        </div>
+
+    </div>
+</body>
+
+</html>

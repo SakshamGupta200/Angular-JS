@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkboxselect</title>
+    <script src="angular.min.js"></script>
+    <style>
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app="">
+        Python:-
+        <input type="checkbox" name="x" ng-model="course" ng-init="x=true">
+        <div ng-if="course">
+            <h2>Course Name:Python</h2>
+            <p>Duration:3 Month</p>
+            <p>Fees:8000</p>
+        </div>
+    </div>
+</body>
+
+</html>

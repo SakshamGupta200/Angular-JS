@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <script src="angular.min.js"></script>
+    <style>
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app="">
+        <button ng-click="count=count+1" ng-init="count=0">
+            Clickme
+        </button>
+        <button ng-click="dislike=0" ng-init="dislike=dislike+1">
+            Dislike
+        </button>
+
+        <h2>Like{{count}}</h2>
+        <h2>Dislike{{dislike}}</h2>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

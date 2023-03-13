@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide</title>
+    <script src="angular.min.js"></script>
+    <style>
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app="">
+        <input type="checkbox" ng-model="data">Hide Your Data<br>
+        <div ng-hide=data>
+            <h2>About Java</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero atque adipisci suscipi
+                t vero enim molestias nesciunt natus assumenda commodi q
+                uo, officiis minima rem saepe numquam nam? Ratione sit natus ea?</p>
+        </div>
+    </div>
+</body>
+
+</html>
